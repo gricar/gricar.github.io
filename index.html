@@ -5,15 +5,64 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portifólio Web</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans&display=swap'); /*Importado do Google Fonts*/
+        body{
+            background-color: #8BC6EC;
+            background-image: linear-gradient(135deg, #8BC6EC 0%, #b9ff79 100%);
+            font-family: 'Josefin Sans', sans-serif;
+        }
+
+        h1{
+            font-family: 'Bebas Neue', cursive;
+        }
+
+        h2{
+            font-size: 18px;
+        }
+
+        p{
+            font-size: 14px;
+        }
+
+        .cabecalho{
+            display: flex;
+        }
+
+        .perfil{
+           align-self:center;
+        }
+
+        .perfil-foto{
+            width: 200px;
+            border-radius: 150px;
+            box-shadow: 4px 4px 4px 3px rgba(0, 0, 0, 0.2); /* offset-x | offset-y | blur-radius | spread-radius | color */
+        }
+
+        .social-media{
+            
+        }
+
+        .sites{
+            list-style: none;
+            
+        }
+    </style>
 </head>
 <body>
-    <h1>Gabriel Rodrigues Ricardo</h1>
-    <img src="Imagens/SouTryber.png" width="300px" alt="Meu perfil" id="profile">
-    <p>Tenho 25 anos, atualmente estudando desenvolvimento Web na Trybe!<br>Sou de São José dos Campos - SP</p>
-    
-    <ul>Se desejar conectar comigo nas redes sociais
-    <li><a href="https://www.linkedin.com/in/gabrielrodriguesricardo/" target="blank">Linkedin</a></li>
-    <li><a href="https://github.com/gricar" target="blank">GitHub</a></li>
+    <div class="cabecalho">
+    <img class="perfil-foto" src="Imagens/SouTryber.png" alt="Meu perfil" id="profile">
+        <div class="perfil">
+        <h1>Gabriel Rodrigues Ricardo</h1>
+        <h2>Tenho 25 anos e atualmente estudando desenvolvimento Web na Trybe!</h2>
+        <p>Sou de São José dos Campos - SP</p>
+        </div>
+    </div>
+
+    <p class="social-media">Se desejar conectar comigo nas redes sociais:</p>
+    <ul>
+    <li class="sites"><a href="https://www.linkedin.com/in/gabrielrodriguesricardo/" target="blank">Linkedin</a></li>
+    <li class="sites"><a href="https://github.com/gricar" target="blank">GitHub</a></li>
 
     </ul>
 
@@ -21,7 +70,8 @@
     <p>Flávio Augusto - <em>Campeões amam a vitória, ainda que, em alguns momentos, a jornada não seja tão prazerosa quanto eles gostariam.</em></p>
     <p>Thiago Nigro - <em>Quando você está junto de gigantes, naturalmente, você engrandece. E um dos melhores investimentos que você pode fazer, como pessoa, é desenvolver um ambiente com pessoas fora de série. Pessoas que agregam valor e estão em harmonia em prol de um objetivo comum.</em></p>
     
-    <ul>Minhas principais habilidades:
+    <p>Minhas principais habilidades:</p>
+    <ul>
         <li>Relacionamento pessoal</li>
         <li>Investimentos financeiros</li>
         <li>Gerenciamento de atividades</li>
